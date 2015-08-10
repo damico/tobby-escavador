@@ -1,2 +1,2 @@
 # tobby-escavador
-GeoRSS Parser for Pedology
+GeoJSON Parser for Pedology written in Java
