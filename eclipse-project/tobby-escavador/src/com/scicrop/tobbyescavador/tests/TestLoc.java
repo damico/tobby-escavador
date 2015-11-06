@@ -12,7 +12,7 @@ public class TestLoc {
 	@Test
 	public void test() {
 
-		List<Location> locLst = new ArrayList<TestLoc.Location>();
+		List<Location> locLst = new ArrayList<Location>();
 		//		locLst.add(new Location(-48.705, -25.131));
 		//	
 		//		locLst.add(new Location(-48.440, -25.051));
@@ -104,7 +104,6 @@ public class TestLoc {
 
 	public boolean contains(Location locKey, List<Location> locLst) {
 
-
 		Location lastPoint = locLst.get(locLst.size() -1);
 
 
@@ -124,7 +123,7 @@ public class TestLoc {
 					while (x1 < 0)
 						x1 += 360;
 					while (x2 < 0)
-						x2 += 360;
+							x2 += 360;
 				} else {
 					while (x1 > 0) x1 -= 360;
 					while (x2 > 0) x2 -= 360;
@@ -146,28 +145,5 @@ public class TestLoc {
 	}
 
 
-	public class Location{
-
-		private double lat = .0;
-		private double lon = .0;
-
-		public double getLat() {
-			return lat;
-		}
-		public void setLat(double lat) {
-			this.lat = lat;
-		}
-		public double getLon() {
-			return lon;
-		}
-		public void setLon(double lon) {
-			this.lon = lon;
-		}
-		public Location(double lat, double lon) {
-			super();
-			this.lat = lat;
-			this.lon = lon;
-		}
-
-	}
+	
 }
